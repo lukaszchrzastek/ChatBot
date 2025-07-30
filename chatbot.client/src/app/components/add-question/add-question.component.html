@@ -1,0 +1,11 @@
+<div class="chat-input">
+  <mat-form-field appearance="outline" class="input-field">
+    <textarea
+      #questionArea
+      matInput
+      [(ngModel)]="questionText"
+      [disabled]="isDisabled"
+      title="Wpisz swoje pytanie tutaj"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="isButtonDisabled" (click)="sendQuestion()">Wyślij</button>
+</div>

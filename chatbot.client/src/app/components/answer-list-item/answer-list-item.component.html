@@ -1,0 +1,24 @@
+<mat-list-item class="answer-item">
+  <mat-icon matListIcon>chat_bubble_outline</mat-icon>
+  <div class="mat-list-text">
+    <div class="answer-actions">
+      <app-reaction-buttons
+        *ngIf="answer.text"
+        [reaction]="answer.reaction"
+        (like)="onLikeAnswer()"
+        (dislike)="onDislikeAnswer()">
+      </app-reaction-buttons>
+    </div>
+    <div class="answer-text">
+      {{ answer.text }}
+    </div>
+    <div class="action-row">
+      <app-typing-dots [visible]="!answer.isCompleted"></app-typing-dots>
+      <span class="canceled" *ngIf="answer.canceledAt">Anulowano</span>
+      <button mat-stroked-button color="warn" class="cancel-btn" *ngIf="!answer.isCompleted" (click)="onCancelAnswer()">
+        <mat-icon fontIcon="close" style="margin-right: 4px"></mat-icon>
+        Anuluj
+      </button>
+    </div>
+  </div>
+</mat-list-item>

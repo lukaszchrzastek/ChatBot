@@ -1,0 +1,17 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 90%;
+  margin: 32px auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 100%;
+    max-width: none;
+  }
+}

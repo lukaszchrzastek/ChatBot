@@ -1,0 +1,12 @@
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  height: calc(100vh - 184px);
+}
+
+.empty-state {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #666;
+}
