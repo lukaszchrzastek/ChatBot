@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Błąd walidacji</h1>
+<div mat-dialog-content>
+  <div *ngFor="let field of errorKeys">
+    <strong>{{ field }}</strong
+    >:
+    <ul>
+      <li *ngFor="let message of errors[field]">{{ message }}</li>
+    </ul>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Zamknij</button>
+</div>

@@ -1,0 +1,6 @@
+<app-spinner *ngIf="loadingService.isLoading$ | async"></app-spinner>
+
+<div class="chat-container">
+  <app-chat-messages></app-chat-messages>
+  <app-add-question></app-add-question>
+</div>

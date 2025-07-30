@@ -1,0 +1,16 @@
+@ChatBot.API_HostAddress = http://localhost:5111
+
+GET {{ChatBot.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{ChatBot.API_HostAddress}}/health/
+Accept: text/plain
+
+###
+
+POST {{ChatBot.API_HostAddress}}/user/create-user
+
+###
+

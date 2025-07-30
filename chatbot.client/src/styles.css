@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.snackbar-error {
+  background-color: #f44336;  
+}
+
+.snackbar-warning {
+  background-color: #ffa000;  
+}
+
+::ng-deep .cdk-global-overlay-wrapper {
+  align-items: flex-start !important;  
+}
+
+::ng-deep .mat-snack-bar-container {
+  margin-top: 20px;  
+}
+

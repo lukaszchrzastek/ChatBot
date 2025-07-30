@@ -1,0 +1,16 @@
+<div class="chat-messages" #chatMessages>
+  <mat-list *ngIf="questionsList && questionsList.length">
+    <ng-container *ngFor="let question of questionsList">
+      <app-question-list-item [question]="question"> </app-question-list-item>
+      <app-answer-list-item
+        *ngIf="question.answer"
+        [questionId]="question.id"
+        [answer]="question.answer"
+        (liked)="onLiked($event)"
+        (disliked)="onDisliked($event)"
+        (canceled)="onCanceled($event)"></app-answer-list-item>
+    </ng-container>
+  </mat-list>
+
+  <div *ngIf="!questionsList || questionsList.length === 0" class="empty-state">Zadaj pierwsze pytanie</div>
+</div>

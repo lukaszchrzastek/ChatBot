@@ -1,0 +1,80 @@
+mat-list-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  white-space: normal;
+}
+
+.mat-list-text {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.mat-list-text b {
+  font-size: 16px;
+  color: #424242;
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.answer-text {
+  margin-top: 6px;
+  font-style: italic;
+  color: #616161;
+  display: block;
+}
+
+.answer-item {
+  position: relative;
+  background-color: #f1f8e9;
+  padding-top: 40px;
+}
+
+.answer-actions {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 100%;
+    max-width: none;
+    margin: 16px;
+  }
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.cancel-btn {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  height: auto;
+  border-radius: 20px;
+  border-color: #f44336;
+  color: #f44336;
+}
+
+.cancel-btn:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+.canceled {
+  font-size: 0.75rem;
+  color: #f44336;
+}

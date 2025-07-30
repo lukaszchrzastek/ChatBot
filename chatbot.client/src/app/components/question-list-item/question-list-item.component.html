@@ -1,0 +1,9 @@
+<mat-list-item>
+  <mat-icon matListIcon>help_outline</mat-icon>
+  <div class="mat-list-text">
+    <b>{{ question.text }}</b>
+  </div>
+  <div class="created-date">
+    <small>Utworzone: {{ question.createdAt | date: 'dd-MM-yyyy, HH:mm' }}</small>
+  </div>
+</mat-list-item>
